@@ -193,6 +193,12 @@
                 all: unset;
                 cursor: pointer;
             }
+            .pred {
+                color: red;
+                position: absolute; 
+                top: 500px;
+                font: 700 21px "Ruluko", sans-serif;
+            }
         </style>
     </head>
 
@@ -231,14 +237,19 @@
             </div>
           
             <div class="frame-8">
-                <form method = "post" enctype="multipart/form-data"></form>
+                <form method = "POST" enctype="multipart/form-data">
                     <div class="insert-photo">
-                        <input type = "file" name = "Insert photo"/>
+                        <input type = "file" name = "Insert_photo"/>
                         <input type = "submit"/>
                     </div>
                 </form>
             </div>
+            <div>
+                <div class="pred">
+                    <br><h4><b>{{pred}}</b></h4>
+                        <br>
+                </div>
+              </div>
           </div>
-          
     </body>
 </html>
