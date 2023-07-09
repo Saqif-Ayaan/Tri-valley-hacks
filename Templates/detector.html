@@ -170,7 +170,7 @@
                 position: relative;
             }
             .frame-8 {
-                background: rgba(0, 10, 255, 0.7);
+                background: rgba(90, 96, 255, 0.7);
                 border-radius: 20px;
                 padding: 10px;
                 display: flex;
@@ -179,11 +179,11 @@
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                left: 836px;
+                left: 466px;
                 top: 332px;
             }
             .insert-photo {
-                color: #ffffff;
+                color: #000000;
                 text-align: left;
                 font: 400 45px "EB Garamond", sans-serif;
                 position: relative;
@@ -231,7 +231,12 @@
             </div>
           
             <div class="frame-8">
-              <div class="insert-photo">Insert photo</div>
+                <form method = "post" enctype="multipart/form-data"></form>
+                    <div class="insert-photo">
+                        <input type = "file" name = "Insert photo"/>
+                        <input type = "submit"/>
+                    </div>
+                </form>
             </div>
           </div>
           
