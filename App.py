@@ -6,6 +6,7 @@ def initApp():
 
     from Link import start
 
-    app.register(start, url_prefix = '/')
+    app.register_blueprint(start, url_prefix = '/')
 
     return app
+    
